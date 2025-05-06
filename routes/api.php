@@ -14,7 +14,7 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/signin/{id}', [UserController::class, 'signIn'])->name('user.signIn');
 
-Route::post('/sanctum/token', function (Request $request) {
+Route::post('/login', function (Request $request) {
     $request->validate([
         'email' => 'required|email',
         'password' => 'required',
