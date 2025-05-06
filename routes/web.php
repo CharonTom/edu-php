@@ -12,4 +12,4 @@ Route::get('/', function () {
 Route::get('/generate-qr/{userId}', [UserController::class, 'generateQrCode'])->name('generate.qr');
 
 // Route pour marquer un utilisateur comme "présent" après le scan du QR code
-Route::get('/signin/{id}', [UserController::class, 'signIn'])->name('user.signIn');
+// Route::get('/signin/{id}', [UserController::class, 'signIn'])->name('user.signIn');
