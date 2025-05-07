@@ -9,6 +9,5 @@ Route::get('/', function () {
 });
 
 // Route pour générer le QR code pour un utilisateur donné
-Route::middleware('auth:sanctum')
-     ->get('/generate-qr', [UserController::class, 'generateQrCode'])
+Route::get('/generate-qr', [UserController::class, 'generateQrCode'])
      ->name('generate.qr');

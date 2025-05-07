@@ -12,8 +12,10 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::get('/signin/{id}', [UserController::class, 'signIn'])->name('user.signIn');
-
+Route::middleware('auth:sanctum')
+     ->post('/signin', [UserController::class, 'signIn'])
+     ->name('user.signIn');
+     
 Route::post('/login', function (Request $request) {
     $request->validate([
         'email' => 'required|email',
