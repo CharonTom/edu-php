@@ -13,7 +13,6 @@ class UserController extends Controller
      */
     public function generateQrCode()
     {
-        // On ne passe plus d’ID, c’est l’utilisateur authentifié
         $url = route('user.signIn');
 
         $svg = QrCode::size(200)->generate($url);

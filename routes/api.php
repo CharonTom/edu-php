@@ -33,9 +33,3 @@ Route::post('/login', function (Request $request) {
  
     return $user->createToken($request->device_name)->plainTextToken;
 });
-
-// Revoke all tokens...
-// $user->tokens()->delete();
- 
-// // Revoke a specific token...
-// $user->tokens()->where('id', $tokenId)->delete();

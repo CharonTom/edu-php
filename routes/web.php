@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
-// Route de la page d'accueil (par défaut)
+// Route de la page d'accueil
 Route::get('/', function () {
     return view('welcome');
 });
