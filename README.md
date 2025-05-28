@@ -27,11 +27,11 @@ Dans postman, entrer
 "device_name":"Tom"
 }
 
-http://127.0.0.1:8000/generate-qr ==> Route pour générer un QR code (non protégé)
+http://127.0.0.1:8000/generate-qr ==> Route pour générer un QR code (non protégée)
 
-http://localhost:8000/api/signin ==> Notifie l'utilisateur présent, route appeler suite au scannage du QR code. (protégé)
+http://localhost:8000/api/signin ==> Notifie l'utilisateur présent, route appelée suite au scannage du QR code. (protégée)
 
-http://localhost:8000/admin/ ==> Route à taper dans un navigateur pour pouvoir accéder au back-office et superviser la classe
+http://localhost:8000/admin/ ==> URL à taper dans votre navigateur pour pouvoir accéder au back-office et superviser la classe
 
 Les identifiants sont :
 
